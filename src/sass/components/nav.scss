@@ -1,0 +1,49 @@
+.nav a{
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.nav-item-1 a{
+    @extend .text-white;
+    
+    &::after{
+        content: 'Hallo mijn';
+      
+    }
+    &:hover{
+        transform: translateX(50px);
+
+        &::after{
+            content: 'Over mij';
+        }
+    }
+}
+
+
+.nav-item-2 a{
+    &::after{
+        content: 'Naam is';
+        color: #E55934;
+    }
+    &:hover{
+        transform: translateX(50px);
+
+        &::after{
+            content: 'Projecten';
+        }
+    }
+}
+
+.nav-item-3 a{
+    &::after{
+        content: 'Sebastian';
+        color: #E55934;
+    }
+    &:hover{
+        transform: translateX(50px);
+
+        &::after{
+            content: 'Tijdlijn';
+        }
+    }
+}

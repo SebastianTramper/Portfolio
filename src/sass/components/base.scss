@@ -1,0 +1,11 @@
+.header{
+    @extend .bg-dark,.text-white;
+
+    a{
+        @extend .text-white,.text-decoration-none;
+    }
+}
+
+a{
+    @extend .text-decoration-none;
+}
