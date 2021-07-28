@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 
 import Header from '../Header';
-import { Container } from 'react-bootstrap';
+import Story from '../Story';
+import { motion } from 'framer-motion';
+
 
 
 class About extends Component {
@@ -11,11 +13,17 @@ class About extends Component {
 
   render(){
     return (
-      <div className="bg-dark">
-        <Container>
+      <motion.div 
+      initial={{scaleY: 0}}
+      animate={{scaleY: 1}} 
+      exit={{scaleY: 0}}
+      transition={{duration:.5}}>
+          <div>
             <Header title={this.props.title}/>
-        </Container>
-      </div> 
+            <Story  />
+          </div> 
+      </motion.div>
+    
     );
   }
 }

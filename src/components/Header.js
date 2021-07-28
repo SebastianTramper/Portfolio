@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
-
+import { ArrowBarLeft } from 'react-bootstrap-icons';
 
 
 class Header extends Component {
@@ -10,7 +10,7 @@ class Header extends Component {
         this.state = {
             title: props.title
         }
-    }
+    }    
     
   render(){
     return (
@@ -18,18 +18,14 @@ class Header extends Component {
             <Container>
                 <div className="d-flex align-items-center vh-100">
                     <div className="w-100">
-                        <p className="mb-5"><Link to="/"> Terug </Link></p>
-                        <h1 className="text-center"> 
-                            { this.state.title }
+                        <p className="position-absolute top-10"><Link to="/"><ArrowBarLeft size={26}/> terug </Link></p>
+                        <h1 className="text-center" >
+                                { this.state.title }                           
                         </h1>
-                        <Link to="/">Werk ervaring</Link>
-                        <Link to="/">Studie</Link>
-                        <Link to="/">Side projects</Link>
                     </div>
                 </div>
             </Container>
         </div>
-  
     );
   }
 }

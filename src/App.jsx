@@ -5,29 +5,32 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import Work from './components/pages/Work';
 import Timeline from './components/pages/Timeline';
-
+import { AnimatePresence } from 'framer-motion';
 
 import {
-  BrowserRouter,
   Route,
-  Switch
+  Switch,
+  useLocation
 } from 'react-router-dom';
 
-
-
-const App = () => (
-  <BrowserRouter>
-
+function App (){
+  const location = useLocation();
+  return (
     <div>
-      <Switch>
+  
+    <AnimatePresence exitBeforeEnter initial={false}>
+      <Switch location={location} key={location.pathname}>
         <Route exact path="/" component={Home} />
         <Route path="/about" render={ () => <About title='Ik ben een full-stack webdeveloper' /> } />
         <Route path="/work" render={ () => <Work title='Mijn projecten' /> } />
         <Route path="/timeline" render={ () => <Timeline title='Ik bouw interactieve websites / webapps' /> } />
       </Switch>
-    </div>
+    </AnimatePresence>
+ 
 
-  </BrowserRouter>
-);
+      
+    </div>
+  );
+};
 
 export default App;
