@@ -10,7 +10,7 @@ const Expertise = (props) => {
 
     return (
 
-        <div className="bg-primary">
+        <div className="bg-primary" name="expertise">
             <div className="d-flex align-items-center min-vh-100">
                 <Container>
                     <Row xs={1} md={3} className="g-4">

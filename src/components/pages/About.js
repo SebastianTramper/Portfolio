@@ -16,10 +16,19 @@ class About extends Component {
         animate={{ scaleY: 1 }}
         exit={{ scaleY: 0 }}
         transition={{ duration: .5 }}>
-          <Header title={this.props.title} scrollPositionClass="story" />
+
+          <Header 
+          title={this.props.title}
+          scrollPositionClass="story"
+          page='about'
+          color='white'  />
+
       </motion.div>
 
-      <Story />
+      <Story
+       scrollPositionClass="expertise"
+       page='about'
+       color='dark' />
       <Expertise />
       </>
 
