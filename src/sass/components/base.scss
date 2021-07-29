@@ -9,3 +9,21 @@
 a{
     @extend .text-decoration-none;
 }
+
+.chevron-circle{
+    width: 2.5rem;
+    height: 2.5rem;
+    @extend .position-relative;
+
+    svg{
+        @extend .position-absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%)translateY(-50%);
+    }
+}
+
+.expertise-icon{
+    height: 50px;
+    @extend .my-5;
+}

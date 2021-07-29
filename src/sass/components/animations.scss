@@ -1,0 +1,14 @@
+.text-hover-animation-right span{
+    transition: all 500ms;
+}
+
+.text-hover-animation-right span{
+    display: inline-block;
+    transform: translateX(-20px);
+    opacity: 0;
+}
+
+.text-hover-animation-right:hover span{
+    transform: translateX(0);
+    opacity: 1;
+}

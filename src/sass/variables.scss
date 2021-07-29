@@ -1,18 +1,29 @@
+$flame: #E55934;
+$Dark: #000000;
+$Tundora: #4d4d4d;
+$Shaft: #262626;
+
 $font-size-base: 1.3rem;
 
-$font-family-base:  'Archivo Narrow', sans-serif;
+$font-family-base:  'Roboto', sans-serif;
 $font-weight-base: 400;
+$body-color: $Shaft;
+$headings-color: $Tundora;
 
 $headings-font-family:  'Spartan', sans-serif;
 $headings-font-weight: 700;
 
-$DaisyBush: #E55934;
-$Dark: #000000;
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  5: 1rem,
+);
 
 /* make the customizations */
 $theme-colors: (
-    "primary": $DaisyBush,
-    'dark': $Dark
+    "primary": $flame,
+    "dark": $Dark,
+    "Tundora": $Tundora
 );
 
 $h1-font-size: 6rem;
