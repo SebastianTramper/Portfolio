@@ -22,10 +22,9 @@ const Expertise = (props) => {
                                         Front-end development
                                     </Card.Title>
                                     <Card.Text className="fw-light mb-4">
-                                        Het bouwen van interactieve en perfect ontworpen websites is naar mijn menig het mooiste wat er is!
+                                        Ik bouw interactieve websites met oog voor UX / UI
                                     </Card.Text>
                                     <div className="mb-4">
-
                                         <h6>
                                             Talen die ik spreek
                                         </h6>
@@ -51,7 +50,7 @@ const Expertise = (props) => {
                                         Back-end development
                                     </Card.Title>
                                     <Card.Text className="fw-light mb-4">
-                                        Het bouwen van interactieve en perfect ontworpen websites is naar mijn menig het mooiste wat er is!
+                                        Ik bouw maatwerk oplossingen naar de wensen de van klant.
                                     </Card.Text>
                                     <div className="mb-4">
 
