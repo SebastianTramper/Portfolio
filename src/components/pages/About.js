@@ -7,23 +7,21 @@ import { motion } from 'framer-motion';
 
 
 class About extends Component {
-    constructor(props) {
-        super(props);
-    }
 
-  render(){
+  render() {
     return (
-      <motion.div 
-      initial={{scaleY: 0}}
-      animate={{scaleY: 1}} 
-      exit={{scaleY: 0}}
-      transition={{duration:.5}}>
-          <div>
-            <Header title={this.props.title}/>
-            <Story  />
-          </div> 
+      <motion.div
+        initial={{ scaleY: 0 }}
+        animate={{ scaleY: 1 }}
+        exit={{ scaleY: 0 }}
+        transition={{ duration: .5 }}>
+        <div>
+          <Header title={this.props.title} />
+
+          <Story />
+        </div>
       </motion.div>
-    
+
     );
   }
 }
