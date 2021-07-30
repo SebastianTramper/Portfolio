@@ -1,4 +1,3 @@
-import { hex6 } from '@react-spring/shared';
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import frontEndDevelopement from '../images/icons/improvement.svg';
@@ -6,12 +5,13 @@ import backEndDevelopement from '../images/icons/settings.svg';
 import tools from '../images/icons/tools.svg';
 
 
-const Expertise = (props) => {
+const Expertise = React.forwardRef( (props,ref) => {
+
 
     return (
 
-        <div className="bg-primary" name="expertise">
-            <div className="d-flex align-items-center min-vh-100">
+        <div className="bg-primary">
+            <div className="d-flex align-items-center min-vh-100" ref={ref} name="expertise">
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         <Col>
@@ -100,7 +100,7 @@ const Expertise = (props) => {
             </div>
         </div>
     );
-}
+})
 
 export default Expertise;
 

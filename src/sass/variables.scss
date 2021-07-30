@@ -2,6 +2,7 @@ $flame: #E55934;
 $Dark: #000000;
 $Tundora: #4d4d4d;
 $Shaft: #262626;
+$Mantis: #198754;
 
 $font-size-base: 1.3rem;
 
@@ -13,15 +14,20 @@ $headings-color: $Tundora;
 $headings-font-family:  'Spartan', sans-serif;
 $headings-font-weight: 700;
 
+$border-radius-lg: 1rem;
+$input-border-color:  $Dark;
+
 
 // scss-docs-start font-sizes
 $font-sizes: (
   5: 1rem,
+  6: .7rem
 );
 
 /* make the customizations */
 $theme-colors: (
     "primary": $flame,
+    "success": $Mantis,
     "dark": $Dark,
     "Tundora": $Tundora
 );

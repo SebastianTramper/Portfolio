@@ -4,6 +4,8 @@ import profile from '../../images/profile12.png';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 
+
+
 function Home() {
 
 
