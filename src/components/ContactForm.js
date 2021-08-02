@@ -13,7 +13,7 @@ const SignupSchema = Yup.object().shape({
 
 function ContactForm() {
     return (
-        <Formik
+        <Formik 
             initialValues={{
                 Name: '',
                 Message: '',
@@ -38,7 +38,7 @@ function ContactForm() {
                     <Field className="form-control rounded-3 mb-3" name="Message" type="text" placeholder="Bericht" component="textarea" />
                     {errors.Message && touched.Message ? <div className="alert alert-primary">{errors.Message}</div> : null}
                     <div className="d-grid">
-                        <button type="submit" className="btn btn-outline-dark rounded-pill">Verzenden</button>
+                        <button type="submit" className="btn btn-success rounded-pill">Verzenden</button>
                     </div>
                 </Form>
             )}

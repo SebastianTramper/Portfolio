@@ -3,15 +3,15 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import frontEndDevelopement from '../images/icons/improvement.svg';
 import backEndDevelopement from '../images/icons/settings.svg';
 import tools from '../images/icons/tools.svg';
+import ScrollDown from './ScrollDown';
 
-
-const Expertise = React.forwardRef( (props,ref) => {
+const Expertise = () => {
 
 
     return (
 
-        <div className="bg-primary">
-            <div className="d-flex align-items-center min-vh-100" ref={ref} name="expertise">
+        <div className="bg-dark position-relative">
+            <div className="d-flex align-items-center min-vh-100" name="expertise">
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         <Col>
@@ -19,7 +19,7 @@ const Expertise = React.forwardRef( (props,ref) => {
                                 <Card.Img variant="top" src={frontEndDevelopement} className="expertise-icon" />
                                 <Card.Body className="pt-0">
                                     <Card.Title>
-                                        Front-end development
+                                        <span className="text-primary">Front-end</span> development
                                     </Card.Title>
                                     <Card.Text className="fw-light mb-4">
                                         Ik bouw interactieve websites met oog voor UX / UI
@@ -47,7 +47,7 @@ const Expertise = React.forwardRef( (props,ref) => {
                                 <Card.Img variant="top" src={backEndDevelopement} className="expertise-icon" />
                                 <Card.Body className="pt-0">
                                     <Card.Title>
-                                        Back-end development
+                                        <span className="text-success">Back-end</span> development
                                     </Card.Title>
                                     <Card.Text className="fw-light mb-4">
                                         Ik bouw maatwerk oplossingen naar de wensen de van klant.
@@ -76,7 +76,7 @@ const Expertise = React.forwardRef( (props,ref) => {
                                 <Card.Img variant="top" src={tools} className="expertise-icon" />
                                 <Card.Body className="pt-0">
                                     <Card.Title>
-                                        Overige technieken
+                                        <span className="text-blue">Dev tools </span>/ technieken
                                     </Card.Title>
 
                                     <div className="mb-4">
@@ -96,11 +96,20 @@ const Expertise = React.forwardRef( (props,ref) => {
                             </Card>
                         </Col>
                     </Row>
+                    <div className="d-flex justify-content-center">
+                        <div className="position-absolute bottom-10 z-index-500" >
+                            <ScrollDown
+                                backgroundColor="#000"
+                                borderColor="#fff"
+                                scrollTo="footer"
+                            />
+                        </div>
+                    </div>
                 </Container>
             </div>
         </div>
     );
-})
+};
 
 export default Expertise;
 

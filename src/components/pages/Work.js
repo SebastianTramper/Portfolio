@@ -4,10 +4,12 @@ import Header from '../Header';
 import ProjectList from '../ProjectList';
 import { motion } from 'framer-motion';
 
+import { Element } from 'react-scroll'
 class Work extends Component {
 
   render() {
     return (
+      <>
       <motion.div
         initial={{ scaleY: 0 }}
         animate={{ scaleY: 1 }}
@@ -15,11 +17,17 @@ class Work extends Component {
         transition={{ duration: .5 }}>
         <div>
           <div className="bg-dark">
-            <Header title={this.props.title} />
+              <Header 
+              title="Ik bouw interactieve"
+              subtitle="websites / webapps" />
           </div>
-          <ProjectList />
         </div>
       </motion.div>
+
+      <Element name="content">
+          <ProjectList />
+      </Element>
+      </>
     );
   }
 }

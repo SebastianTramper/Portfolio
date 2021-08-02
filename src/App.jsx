@@ -21,9 +21,9 @@ function App() {
       <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/" component={Home} />
-          <Route path="/about" render={() => <About title='Ik ben een full-stack webdeveloper' />} />
-          <Route path="/work" render={() => <Work title='Mijn projecten' />} />
-          <Route path="/timeline" render={() => <Timeline title='Ik bouw interactieve websites / webapps' />} />
+          <Route path="/about" render={() => <About />} />
+          <Route path="/work" render={() => <Work />} />
+          <Route path="/timeline" render={() => <Timeline />} />
         </Switch>
       </AnimatePresence>
     </div>

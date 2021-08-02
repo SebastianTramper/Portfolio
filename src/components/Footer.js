@@ -2,24 +2,30 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Github, Linkedin } from 'react-bootstrap-icons';
 import ContactForm from './ContactForm';
-const Footer = React.forwardRef((props, ref) => {
+import ScrollUp from './ScrollUp';
+
+const Footer = () => {
 
 
     return (
-        <div className="bg-white py-5 pt-md-7" name="footer" ref={ref}>
-            <Container>
-                <Row className="mb-4 mb-md-6">
-                    <Col xl={5}>
-                        <h2>Contact</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </Col>
-                    <Col xl={{span: 5, offset: 2}}>
-                        <h5 className="mb-4">Stuur mij een bericht</h5>
+        <div className="bg-gray position-relative" name='footer'>
+            <Container className="py-5 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
+                <Row className="my-4 my-md-6">
+
+                    <Col xl={{ span: 6, offset: 3 }} className="p-5 shadow bg-white">
+                        <h3 className="mb-4">Stuur mij een bericht</h3>
                         <ContactForm />
                     </Col>
                 </Row>
+                <div className="d-flex justify-content-center">
+                    <div className="position-absolute bottom-15 z-index-500" >
+                        <ScrollUp
+                            backgroundColor="#white"
+                            borderColor="#000"
+                            scrollTo="header"
+                        />
+                    </div>
+                </div>
                 <div>
                     <hr className="bg-dark"></hr>
                     <div className="d-flex justify-content-between align-items-center">
@@ -35,10 +41,11 @@ const Footer = React.forwardRef((props, ref) => {
                         </div>
                     </div>
                 </div>
+
             </Container>
         </div>
     );
-})
+};
 
 export default Footer;
 

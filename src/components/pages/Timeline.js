@@ -15,7 +15,7 @@ class Timeline extends Component {
         <div className="bg-dark">
           <Container>
             <div>
-              <Header title={this.props.title} />
+        
             </div>
           </Container>
         </div>

@@ -16,8 +16,8 @@ function Home() {
       exit={{ opacity: 0 }}
       transition={{ duration: .5 }}>
 
-      <div className="bg-dark">
-        <Container style={{ backgroundImage: `url(${profile})`, backgroundBlendMode: 'multiply', backgroundRepeat: 'no-repeat', backgroundPosition: 'right', height: '100vh' }} className="background-animation">
+      <div className="bg-dark" style={{ backgroundImage: `url(${profile})`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right', height: '100vh' }} >
+        <Container  className="background-animation">
           <div className="d-flex align-items-center vh-100" >
             <NavList />
           </div>

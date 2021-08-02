@@ -19,6 +19,14 @@ a{
     height: 2.5rem;
     @extend .position-relative;
 
+    &:hover{
+        background: $white;
+
+        svg{
+            fill: $dark
+        }
+    }
+
     svg{
         @extend .position-absolute;
         left: 50%;
@@ -34,4 +42,12 @@ a{
 
 .z-index-500{
     z-index: 500;
+}
+
+.list-color-primary li::marker{
+    color: $success;
+}
+
+.overlay-multiply{
+    mix-blend-mode: multiply;
 }
