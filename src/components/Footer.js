@@ -18,7 +18,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <div className="d-flex justify-content-center">
-                    <div className="position-absolute bottom-15 z-index-500" >
+                    <div className="position-absolute bottom-25 z-index-500" >
                         <ScrollUp
                             backgroundColor="#white"
                             borderColor="#000"

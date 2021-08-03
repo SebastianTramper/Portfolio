@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import AboutImage from "../images/programmeren.jpg";
 import { Link } from 'react-router-dom';
-import { scroller } from 'react-scroll';
 import ScrollDown from './ScrollDown';
 
 const Story = (props) => {
@@ -10,7 +9,7 @@ const Story = (props) => {
     return (
         <div className="py-5 py-md-9 position-relative bg-gray">
             <div className="container px-md-0">
-                <Row>
+                <Row xs={12} >
                     <Col className="ml-0 ms-md-7 ml-xxl-0">
                         <div>
                             <h2>Introductie</h2>
@@ -40,9 +39,9 @@ const Story = (props) => {
 
 
                     </Col>
-                    <Col className="d-flex justify-content-end">
+                    <Col className="d-flex justify-content-end  h-90">
                         <div>
-                            <img src={AboutImage} className="img-fluid h-90" alt="sebastian"></img>
+                            <img src={AboutImage} className="img-fluid" alt="sebastian"></img>
                         </div>
                     </Col>
                 </Row>

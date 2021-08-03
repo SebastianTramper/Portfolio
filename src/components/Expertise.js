@@ -10,7 +10,7 @@ const Expertise = () => {
 
     return (
 
-        <div className="bg-dark position-relative">
+        <div className="bg-dark position-relative py-5 py-md-0">
             <div className="d-flex align-items-center min-vh-100" name="expertise">
                 <Container>
                     <Row xs={1} md={3} className="g-4">

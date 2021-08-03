@@ -1,37 +1,71 @@
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
-import * as Yup from 'yup';
-
-const SignupSchema = Yup.object().shape({
-    Name: Yup.string()
-        .required('Hoe heet u?'),
-    Email: Yup.string()
-        .required('Wat is uw email-adres?')
-        .email('Email-adres ongeldig'),
-    Message: Yup.string().required('Hoe kan ik u helpen?'),
-});
+import { Formik, Form, Field, ErrorMessage } from "formik"
 
 function ContactForm() {
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+      }
+
+    const initialValues = {
+        name: "",
+        email: "",
+        message: ""
+    }
+
+    const validate = values => {
+        let errors = {}
+
+        if(!values.name) {
+            errors.name = "Please type your name"
+        }
+
+        if(!values.email) {
+            errors.email = "Please type your email"
+        } else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)) {
+            errors.email = "Please type a valid email"
+        }
+        
+
+        return errors
+    }
+
+    const onSubmit = (values, submitProps) => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", ...values })
+          })
+            .then(response => {
+                if(!response.ok) {
+                    throw new Error(response.status)
+                } else if(response.ok) {
+                    alert("Success!")
+                    submitProps.resetForm()
+                } else {
+                    alert("Something went wrong!")
+                }
+
+                return response
+            })
+            .catch(error => alert(error));
+    }
+
     return (
         <Formik 
-            initialValues={{
-                Name: '',
-                Message: '',
-                Email: '',
-            }}
-            validationSchema={SignupSchema}
-            onSubmit={values => {
-                // same shape as initial values
-                console.log(values);
-            }}
+        initialValues={initialValues}
+        validate={validate}
+        onSubmit={onSubmit}
         >
             {({ errors, touched }) => (
-                <Form method="POST" action="#">
-                    <Field className="form-control rounded-pill mb-3" name="Name" placeholder="Naam" />
+                <Form   >
+                    <input type="hidden" name="form-name" value="contact" />
+                    <Field className="form-control rounded-pill mb-3" name="name" placeholder="Naam" />
                     {errors.Name && touched.Name ? (
                         <div className="alert alert-primary">{errors.Name}</div>
                     ) : null}
-                    <Field className="form-control rounded-pill mb-3" name="Email" placeholder="Email" />
+                    <Field className="form-control rounded-pill mb-3" name="email" placeholder="Email" />
                     {errors.Email && touched.Email ? (
                         <div className="alert alert-primary">{errors.Email}</div>
                     ) : null}
