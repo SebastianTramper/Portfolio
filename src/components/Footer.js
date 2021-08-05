@@ -3,22 +3,46 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Github, Linkedin } from 'react-bootstrap-icons';
 import ContactForm from './ContactForm';
 import ScrollUp from './ScrollUp';
+import { useSpring, animated } from 'react-spring'
+import { useInView, InView } from 'react-intersection-observer'
+
 
 const Footer = () => {
 
 
+    const { ref, inView } = useInView({
+        rootMargin: '-150px'
+    });
+
+    const textAnimation = useSpring(
+        {
+            to: {
+                y: inView ? 0 : -150,
+                opacity: inView ? 1 : 0
+            },
+            from: {
+                y: inView ? -150 : 0,
+                opacity: inView ? 0 : 1
+            },
+            config: { duration: 600 },
+        });
+
     return (
-        <div className="bg-gray position-relative" name='footer'>
+        <div className="bg-gray position-relative" name='footer' ref={ref}>
             <Container className="py-5 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
                 <Row className="my-4 my-md-6">
 
-                    <Col xl={{ span: 6, offset: 3 }} className="p-5 shadow bg-white">
-                        <h3 className="mb-4">Stuur mij een bericht</h3>
-                        <ContactForm />
-                    </Col>
+                    <InView as="div">
+                        <animated.div style={textAnimation}>
+                            <Col xl={{ span: 6, offset: 3 }} className="p-5 shadow bg-white">
+                                <h3 className="mb-4">Stuur mij een bericht</h3>
+                                <ContactForm />
+                            </Col>
+                        </animated.div>
+                    </InView>
                 </Row>
                 <div className="d-flex justify-content-center">
-                    <div className="position-absolute bottom-25 z-index-500" >
+                    <div className="position-absolute bottom-15 z-index-500" >
                         <ScrollUp
                             backgroundColor="#white"
                             borderColor="#000"

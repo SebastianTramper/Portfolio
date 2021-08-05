@@ -20,10 +20,10 @@ a{
     @extend .position-relative;
 
     &:hover{
-        background: $white;
+        background: $white!important;
 
         svg{
-            fill: $dark
+            fill: $primary!important;
         }
     }
 

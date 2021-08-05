@@ -8,10 +8,13 @@ import Footer from '../Footer';
 import { Element } from 'react-scroll'
 import { motion } from 'framer-motion';
 
+
 import { useInView } from 'react-intersection-observer';
 
 
 function About(props) {
+
+  
 
   return (
     <>
