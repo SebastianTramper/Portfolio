@@ -1,24 +1,43 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Row, Container, Col, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+
+import { useSpring, animated } from 'react-spring'
+import { useInView, InView } from 'react-intersection-observer'
 
 import OnlinekookBook from '../images/projects/onlinekookboek.PNG';
 import TheetuindeMeeze from '../images/projects/theetuindemeeze.PNG';
 
 function ProjectList() {
-  const [isActive, setActive] = useState(false);
+
+  const { ref, inView } = useInView({
+    rootMargin: '-150px'
+  });
+
+  const showProject = useSpring(
+    {
+      to: {
+        opacity: inView ? 1 : 0
+      },
+      from: {
+        opacity: 0,
+      },
+      config: { duration: 600 },
+
+    });
+
+
+
 
   return (
-    <Container className="my-5 my-md-8">
+    <Container className="my-5 my-md-8" ref={ref}>
       <h2>Websites</h2>
       <Row xl={2}>
         <Col>
-          <Card className="bg-overlay text-white"  
-          onMouseEnter={() => setActive(true)}
-          onMouseLeave={() => setActive(false)}>
-            <Card.Img src={OnlinekookBook} alt="Card image" className={isActive ? 'overlay-multiply' : ''} />
-            {isActive && (
-              <Card.ImgOverlay>
+          <InView as="div">
+            <animated.div style={showProject} className="card border-1 border-dark project">
+              <Card.Img src={OnlinekookBook} alt="project" className="img-fluid" />
+              <Card.ImgOverlay className="project-overlay">
                 <Card.Title className="text-white">Onlinekookbook</Card.Title>
                 <Card.Text>
                   Deze website heb ik gemaakt in begin 2020 sindien hebben maandelijkse verbeteringen doorgevoerd.
@@ -30,9 +49,8 @@ function ProjectList() {
                   </Link>
                 </Card.Text>
               </Card.ImgOverlay>
-            )}
-
-          </Card>
+            </animated.div>
+          </InView>
         </Col>
 
         <Col>

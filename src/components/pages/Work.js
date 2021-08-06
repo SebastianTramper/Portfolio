@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../Header';
 import ProjectList from '../ProjectList';
+import Footer from '../Footer';
 import { motion } from 'framer-motion';
 
 import { Element } from 'react-scroll'
@@ -27,6 +28,8 @@ class Work extends Component {
       <Element name="content">
           <ProjectList />
       </Element>
+      <Footer/>
+
       </>
     );
   }
