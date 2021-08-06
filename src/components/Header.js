@@ -8,7 +8,7 @@ const Header = (props) => {
 
     return (
         <div className="header vh-100" name="header">
-            <Container className="h-100 d-flex align-items-center">
+            <Container className="h-100 d-flex align-items-end align-items-md-center">
                 <div className="w-100">
                     <p className="position-absolute top-10">
                         <Link to="/" className="text-hover-animation-right">
