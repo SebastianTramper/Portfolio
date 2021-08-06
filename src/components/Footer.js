@@ -17,11 +17,11 @@ const Footer = () => {
     const textAnimation = useSpring(
         {
             to: {
-                y: inView ? 0 : -150,
+                y: inView ? 0 : 150,
                 opacity: inView ? 1 : 0
             },
             from: {
-                y: inView ? -150 : 0,
+                y: inView ? 150 : 0,
                 opacity: inView ? 0 : 1
             },
             config: { duration: 600 },

@@ -35,9 +35,9 @@ class ContactForm extends React.Component {
         return (
             <Form onSubmit={this.handleSubmit}>
                 <input type="hidden" name="form-name" value="contact" />
-                <input type="text" className="form-control rounded-pill mb-3" name="name" value={name} onChange={this.handleChange} placeholder="Naam" />
-                <input type="text" className="form-control rounded-pill mb-3" name="email" value={email} onChange={this.handleChange} placeholder="Email" />
-                <textarea className="form-control rounded-3 mb-3" name="message" value={message} onChange={this.handleChange} placeholder="Bericht" />
+                <input type="text" className="form-control rounded-pill mb-3" name="name" value={name} onChange={this.handleChange} placeholder="Naam" required/>
+                <input type="text" className="form-control rounded-pill mb-3" name="email" value={email} onChange={this.handleChange} placeholder="Email" required/>
+                <textarea className="form-control rounded-3 mb-3" name="message" value={message} onChange={this.handleChange} placeholder="Bericht" required/>
                 <div className="d-grid">
                     <button type="submit" className="btn btn-success rounded-pill">Verzenden</button>
                 </div>
