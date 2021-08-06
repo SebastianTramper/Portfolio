@@ -17,8 +17,8 @@ function Home() {
       transition={{ duration: .5 }}>
 
       <div className="home-background bg-dark" style={{ backgroundImage: `url(${profile})` }} >
-        <Container  className="background-animation">
-          <div className="d-flex align-items-end align-items-md-center" >
+        <Container  className="background-animation h-100">
+          <div className="d-flex align-items-end align-items-md-center h-100" >
             <NavList />
           </div>
         </Container>
