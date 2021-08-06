@@ -11,22 +11,20 @@ function NavList() {
 
   return (
 
-    <div >
-      <ul className="pb-5 ps-md-0 p-md-0">
+      <div className="pb-5 ps-md-0 p-md-0 w-md-100">
         <animated.div style={textAnimation1}>
-          <li className="header-title-large nav nav-item-1"><NavLink to='/about' ></NavLink></li>
+          <div className="header-title-large nav nav-item-1"><NavLink className="w-100" to='/about' ></NavLink></div>
         </animated.div>
 
         <animated.div style={textAnimation2}>
-          <li className="header-title-large nav nav-item-2"><NavLink className="text-primary" to='/work'></NavLink></li>
+          <div className="header-title-large nav nav-item-2"><NavLink className="text-primary w-100" to='/work'></NavLink></div>
         </animated.div>
 
         <animated.div style={textAnimation3}>
-          <li className="header-title-large nav nav-item-3"><NavLink className="text-primary" to='/timeline'></NavLink></li>
+          <div className="header-title-large nav nav-item-3"><NavLink className="text-primary w-100" to='/timeline'></NavLink></div>
         </animated.div>
 
-      </ul>
-    </div>
+      </div>
 
 
   );

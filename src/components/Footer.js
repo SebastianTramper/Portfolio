@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="px-4 px-md-0">
                     <hr className="bg-dark"></hr>
                     <div className="d-flex justify-content-between align-items-center">
-                        <p className="text-dark fs-5">© 2021 Portfolio Sebastian Tramper.</p>
+                        <p className="text-dark fs-5 d-none d-md-block">© 2021 Portfolio Sebastian Tramper.</p>
 
                         <div>
                             <a href="https://www.linkedin.com/in/sebastian-tramper/" target="linkedin">
