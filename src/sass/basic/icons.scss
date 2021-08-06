@@ -18,3 +18,10 @@
         transform: translateX(-50%) translateY(-50%);
     }
 }
+
+.home-icon{
+    top: .5rem;
+    @include media-breakpoint-up(md) {
+        top: 10%;
+    }
+}

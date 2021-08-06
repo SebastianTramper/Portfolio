@@ -10,7 +10,7 @@ const Header = (props) => {
         <div className="header vh-100" name="header">
             <Container className="h-100 d-flex align-items-center">
                 <div className="w-100">
-                    <p className="position-absolute top-10">
+                    <p className="position-absolute home-icon">
                         <Link to="/" className="text-hover-animation-right">
                             <House />
                             <span className="ms-3 fs-5">sebastiantramper.nl</span>
