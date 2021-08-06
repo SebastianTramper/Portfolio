@@ -85,7 +85,7 @@ const Story = () => {
                     </Col>
                 </Row>
                 <div className="d-flex justify-content-center">
-                    <div className="position-absolute bottom-10 z-index-500">
+                    <div className="position-absolute bottom-10 start-50 transform-center z-index-500">
                         <ScrollDown scrollTo="expertise" />
                     </div>
                 </div>

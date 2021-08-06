@@ -20,7 +20,7 @@ const Header = (props) => {
                         {props.title}
                         <div className="text-primary">{props.subtitle}</div>
                     </h1>
-                    <div className="position-absolute start-50 bottom-10">
+                    <div className="position-absolute start-50 bottom-10 transform-center">
                     <ScrollDown
                         backgroundColor="#000"
                         borderColor="#fff"
