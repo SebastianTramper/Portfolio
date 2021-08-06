@@ -26,33 +26,6 @@ const Story = () => {
             config: { duration: 600 },
         });
 
-    const textAnimation2 = useSpring(
-        {
-            to: {
-                x: inView ? 0 : -150,
-                opacity: inView ? 1 : 0
-            },
-            from: {
-                x: inView ? -150 : 0,
-                opacity: inView ? 0 : 1
-            },
-            config: { duration: 1000 },
-        });
-
-    const textAnimation3 = useSpring(
-        {
-            to: {
-                x: inView ? 0 : -150,
-                opacity: inView ? 1 : 0
-            },
-            from: {
-                x: inView ? -150 : 0,
-                opacity: inView ? 0 : 1
-            },
-            config: { duration: 1400 },
-        });
-
-
     const ImageAnimation = useSpring(
         {
             to: {
@@ -85,29 +58,23 @@ const Story = () => {
                                         Binnen het vak van webdevelopment ben altijd geïnteresseerd in het leren van nieuwe technieken, op het moment van schrijven (01-0802021) ben ik React.js en Node.js aan het leren.
                                     </p>
                                     <Link to="/timeline" className="btn btn-outline-success"> Bekijk mijn tijdlijn</Link>
-                                </animated.div>
-                            </InView>
 
-                            <InView as="div">
-                                <animated.div style={textAnimation2} className="mt-5">
-                                    <h5 className="mb-4">Kernwaardes</h5>
-                                    <ul className="list-color-primary">
-                                        <li> Kwaliteit voor kwantiteit</li>
-                                        <li> Houd het simpel</li>
-                                        <li> Herhaal jezelf niet</li>
-                                        <li> Het draait allemaal om aanpasbaarheid</li>
-                                    </ul>
+                                    <div className="mt-5">
+                                        <h5 className="mb-4">Kernwaardes</h5>
+                                        <ul className="list-color-primary">
+                                            <li> Kwaliteit voor kwantiteit</li>
+                                            <li> Houd het simpel</li>
+                                            <li> Herhaal jezelf niet</li>
+                                            <li> Het draait allemaal om aanpasbaarheid</li>
+                                        </ul>
+                                    </div>
+
+                                    <div className="border-start border-2 ps-4 mt-5">
+                                        “It is one thing to write code that works. It is quite another to write good code that works” Dino Esposito (2009)
+                                    </div>
                                 </animated.div>
                             </InView>
                         </div>
-
-                        <InView as="div">
-                            <animated.div style={textAnimation3} className="border-start border-2 ps-4 mt-5">
-                                “It is one thing to write code that works. It is quite another to write good code that works” Dino Esposito (2009)
-                            </animated.div>
-                        </InView>
-
-
                     </Col>
                     <Col className="d-flex justify-content-end  h-90">
                         <InView as="div">
