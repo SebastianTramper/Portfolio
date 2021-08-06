@@ -34,7 +34,7 @@ const Expertise = () => {
                 <Container>
                     <Row xs={1} md={3} className="g-4">
                         <Col>
-                        <InView as="div" className="h-100">
+                            <InView as="div" className="h-100">
                                 <animated.div style={textAnimation} className="h-100">
                                     <Card className="text-center h-100">
                                         <Card.Img variant="top" src={frontEndDevelopement} className="expertise-icon" />
@@ -67,7 +67,7 @@ const Expertise = () => {
 
                         </Col>
                         <Col>
-                        <InView as="div" className="h-100">
+                            <InView as="div" className="h-100">
                                 <animated.div style={textAnimation} className="h-100">
                                     <Card className="text-center h-100">
                                         <Card.Img variant="top" src={backEndDevelopement} className="expertise-icon" />
@@ -125,17 +125,15 @@ const Expertise = () => {
                                         </Card.Body>
                                     </Card>
                                 </animated.div>
-                            </InView>   
+                            </InView>
                         </Col>
                     </Row>
-                    <div className="d-flex justify-content-center">
-                        <div className="position-absolute bottom-10 z-index-500" >
-                            <ScrollDown
-                                backgroundColor="#000"
-                                borderColor="#fff"
-                                scrollTo="footer"
-                            />
-                        </div>
+                    <div className="position-absolute start-50 bottom-10">
+                        <ScrollDown
+                            backgroundColor="#000"
+                            borderColor="#fff"
+                            scrollTo="footer"
+                        />
                     </div>
                 </Container>
             </div>

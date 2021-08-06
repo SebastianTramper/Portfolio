@@ -29,7 +29,7 @@ const Footer = () => {
 
     return (
         <div className="bg-gray position-relative" name='footer' ref={ref}>
-            <Container className="py-5 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
+            <Container className="pt-5 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
                 <Row className="my-4 my-md-6">
 
                     <InView as="div">
@@ -41,14 +41,12 @@ const Footer = () => {
                         </animated.div>
                     </InView>
                 </Row>
-                <div className="d-flex justify-content-center">
-                    <div className="position-absolute bottom-15 z-index-500" >
-                        <ScrollUp
-                            backgroundColor="#white"
-                            borderColor="#000"
-                            scrollTo="header"
-                        />
-                    </div>
+                <div className="d-flex justify-content-center mt-4">
+                    <ScrollUp
+                        backgroundColor="#white"
+                        borderColor="#000"  
+                        scrollTo="header"
+                    />
                 </div>
                 <div>
                     <hr className="bg-dark"></hr>

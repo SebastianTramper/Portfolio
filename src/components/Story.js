@@ -43,7 +43,7 @@ const Story = () => {
         });
 
     return (
-        <div className="py-5 py-md-9 position-relative bg-gray">
+        <div className="py-5 py-md-6 position-relative bg-gray">
             <div className="container" ref={ref}>
                 <Row xs={12} >
                     <Col className="ml-0 ms-md-7 ml-xxl-0">
