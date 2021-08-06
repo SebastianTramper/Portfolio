@@ -1,0 +1,21 @@
+.project-overlay {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+.project {
+    @extend .text-white;
+    transition: background-color 800ms ease-in-out;
+
+    img {
+        mix-blend-mode: multiply;
+    }
+
+    &:hover{
+        background-color: rgba(0,0,0,.85);
+    }
+
+    &:hover .project-overlay {
+        opacity: 1;
+    }
+}

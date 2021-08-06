@@ -1,0 +1,11 @@
+.home-background{
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-position: center;
+
+  
+    @include media-breakpoint-up(md) {
+        background-position: right;
+
+    }
+}

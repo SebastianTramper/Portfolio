@@ -11,8 +11,8 @@ function NavList() {
 
   return (
 
-    <div className="">
-      <ul>
+    <div >
+      <ul className="p-0">
         <animated.div style={textAnimation1}>
           <li className="header-title-large nav nav-item-1"><NavLink to='/about' ></NavLink></li>
         </animated.div>

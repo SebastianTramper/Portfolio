@@ -1,0 +1,20 @@
+.chevron-circle {
+    width: 2.5rem;
+    height: 2.5rem;
+    @extend .position-relative;
+
+    &:hover {
+        background: $white !important;
+
+        svg {
+            fill: $primary !important;
+        }
+    }
+
+    svg {
+        @extend .position-absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}

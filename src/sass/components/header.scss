@@ -1,6 +1,15 @@
+.header {
+    @extend .bg-dark, .text-white;
+
+    a {
+        @extend .text-white, .text-decoration-none;
+    }
+}
+
+
 .header-title-large {
     @extend .list-unstyled;
-    @include responsive-font(10vw,2.5rem,7.5rem,2.5rem);
+    @include responsive-font(10vw,3rem,7.5rem,2.5rem);
     font-weight: $headings-font-weight;
     line-height: 1.2;
     a{
