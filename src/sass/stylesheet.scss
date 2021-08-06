@@ -1,22 +1,22 @@
 
-@import "./variables";
+@import "./variables.scss";
 
-@import "../../node_modules/bootstrap//scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Spartan:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-@import "./base/base";
-@import "./base/mixins";
-@import "./base/animations";
-@import "./base/typografie";
-@import "./base/icons";
-@import "./base/overlays";
-@import "./base/z-index";
+@import "./base/base.scss";
+@import "./base/mixins.scss";
+@import "./base/animations.scss";
+@import "./base/typografie.scss";
+@import "./base/icons.scss";
+@import "./base/overlays.scss";
+@import "./base/z-index.scss";
 
-@import "./components/header";
-@import "./components/Home";
-@import "./components/nav";
-@import "./components/project";
-@import "./components/expertise";
+@import "./components/header.scss";
+@import "./components/home.scss";
+@import "./components/nav.scss";
+@import "./components/project.scss";
+@import "./components/expertise.scss";
 
