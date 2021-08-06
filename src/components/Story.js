@@ -45,8 +45,8 @@ const Story = () => {
     return (
         <div className="py-5 py-md-6 position-relative bg-gray">
             <div className="container" ref={ref}>
-                <Row xs={12} >
-                    <Col className="ml-0 ms-md-7 ml-xxl-0">
+                <Row >
+                    <Col md className="mb-5 mb-md-0 ml-0 ms-md-7 ml-xxl-0">
                         <div>
                             <InView as="div">
                                 <animated.div style={textAnimation}>
@@ -76,7 +76,7 @@ const Story = () => {
                             </InView>
                         </div>
                     </Col>
-                    <Col className="d-flex justify-content-end  h-90">
+                    <Col md className="d-flex justify-content-end  h-90">
                         <InView as="div">
                             <animated.div style={ImageAnimation}>
                                 <img src={AboutImage} className="img-fluid overlay-multiply" alt="sebastian" />
@@ -84,10 +84,11 @@ const Story = () => {
                         </InView>
                     </Col>
                 </Row>
-                <div className="d-flex justify-content-center">
-                    <div className="position-absolute bottom-10 start-50 transform-center z-index-500">
+                    <div className="d-none d-md-block position-absolute bottom-10 start-50 transform-center z-index-500">
                         <ScrollDown scrollTo="expertise" />
                     </div>
+                <div className="d-md-none d-flex justify-content-center mt-4">
+                        <ScrollDown scrollTo="expertise" />
                 </div>
             </div>
         </div>

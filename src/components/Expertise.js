@@ -11,7 +11,7 @@ const Expertise = () => {
 
 
     const { ref, inView } = useInView({
-        rootMargin: '-250px'
+        rootMargin: '-100px'
     });
 
     const textAnimation = useSpring(
@@ -29,7 +29,7 @@ const Expertise = () => {
 
     return (
 
-        <div className="bg-dark position-relative py-5 py-md-0">
+        <div className="bg-dark position-relative py-5 pt-6 py-md-0">
             <div className="d-flex align-items-center min-vh-100" name="expertise" ref={ref}>
                 <Container>
                     <Row xs={1} md={3} className="g-4">
@@ -128,7 +128,14 @@ const Expertise = () => {
                             </InView>
                         </Col>
                     </Row>
-                    <div className="position-absolute start-50 bottom-10">
+                    <div className="d-none d-md-block position-absolute start-50 bottom-10">
+                        <ScrollDown
+                            backgroundColor="#000"
+                            borderColor="#fff"
+                            scrollTo="footer"
+                        />
+                    </div>
+                    <div className="d-md-none d-flex justify-content-center mt-4">
                         <ScrollDown
                             backgroundColor="#000"
                             borderColor="#fff"

@@ -29,7 +29,7 @@ const Footer = () => {
 
     return (
         <div className="bg-gray position-relative" name='footer' ref={ref}>
-            <Container className="pt-5 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
+            <Container className="pt-5 pb-4 pt-md-8 d-flex flex-column justify-content-between  min-vh-100">
                 <Row className="my-4 my-md-6">
 
                     <InView as="div">
