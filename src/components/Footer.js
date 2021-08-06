@@ -41,7 +41,7 @@ const Footer = () => {
                         </animated.div>
                     </InView>
                 </Row>
-                <div className="d-flex justify-content-center mt-4">
+                <div className="d-flex justify-content-center my-4">
                     <ScrollUp
                         backgroundColor="#white"
                         borderColor="#000"  

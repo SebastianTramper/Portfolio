@@ -128,7 +128,7 @@ const Expertise = () => {
                             </InView>
                         </Col>
                     </Row>
-                    <div className="d-none d-md-block position-absolute start-50 bottom-10">
+                    <div className="d-none d-md-block position-absolute start-50 transform-center bottom-10">
                         <ScrollDown
                             backgroundColor="#000"
                             borderColor="#fff"

@@ -32,8 +32,8 @@ function ProjectList() {
   return (
     <Container className="my-5 my-md-8" ref={ref}>
       <h2>Websites</h2>
-      <Row xl={2}>
-        <Col>
+      <Row >
+        <Col md className="mb-4">
           <InView as="div">
             <animated.div style={showProject} className="card border-1 border-dark project">
               <Card.Img src={OnlinekookBook} alt="project" className="img-fluid" />
@@ -53,7 +53,7 @@ function ProjectList() {
           </InView>
         </Col>
 
-        <Col>
+        <Col md className="mb-4">
           <Card className="bg-dark text-white">
             <Card.Img src={TheetuindeMeeze} alt="Card image" />
             {/* <Card.ImgOverlay>
