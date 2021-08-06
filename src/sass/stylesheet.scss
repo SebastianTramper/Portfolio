@@ -6,19 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 // Basic rules to be used everywhere
-@import "./base/Base.scss";
-@import "./base/Mixins.scss";
-@import "./base/Animations.scss";
-@import "./base/Typografie.scss";
-@import "./base/Icons.scss";
-@import "./base/Overlays.scss";
-@import "./base/Z-index.scss";
+@import "./base/base.scss";
+@import "./base/mixins.scss";
+@import "./base/animations.scss";
+@import "./base/typografie.scss";
+@import "./base/icons.scss";
+@import "./base/overlays.scss";
+@import "./base/z-index.scss";
 
 
 // Component based rules
-@import "./components/Header.scss";
+@import "./components/header.scss";
 @import "./components/Home.scss";
-@import "./components/Nav.scss";
+@import "./components/nav.scss";
 @import "./components/project.scss";
-@import "./components/Expertise.scss";
+@import "./components/expertise.scss";
 
