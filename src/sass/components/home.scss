@@ -1,11 +1,13 @@
 .home-background{
     background-repeat: no-repeat;
     height: 100vh;
-    background-position: center;
-
+    background-position: center top;
+    background-size: 80vh;
+    
   
     @include media-breakpoint-up(md) {
         background-position: right;
+        background-size: 100vh;
 
     }
 }
