@@ -1,6 +1,6 @@
 import React from 'react';
 import NavList from '../NavList';
-import profile from '../../images/profile12.png';
+import profile from '../../images/profiel21.png';
 import { Container } from 'react-bootstrap';
 import { motion } from 'framer-motion';
 

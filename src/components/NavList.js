@@ -12,7 +12,7 @@ function NavList() {
   return (
 
     <div >
-      <ul className="p-0">
+      <ul className="pb-5 ps-md-0 p-md-0">
         <animated.div style={textAnimation1}>
           <li className="header-title-large nav nav-item-1"><NavLink to='/about' ></NavLink></li>
         </animated.div>
