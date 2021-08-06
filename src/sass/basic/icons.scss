@@ -20,8 +20,10 @@
 }
 
 .home-icon{
-    top: .5rem;
+    top: 1rem;
+    left: 1.3rem;
     @include media-breakpoint-up(md) {
         top: 10%;
+        left: initial;
     }
 }

@@ -9,7 +9,7 @@ const Header = (props) => {
     return (
         <div className="header vh-100" name="header">
             <Container className="h-100 d-flex align-items-center">
-                <div className="w-100">
+                <div className="w-100 heading">
                     <p className="position-absolute home-icon">
                         <Link to="/" className="text-hover-animation-right">
                             <House />
