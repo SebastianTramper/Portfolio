@@ -7,3 +7,10 @@ h1{
         font-size: 2rem;
     }
 }
+
+.lead-large{
+    font-size: 1.5rem;
+    @include media-breakpoint-up(md) {
+        font-size: $lead-large-font-size;
+    }
+}

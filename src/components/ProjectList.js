@@ -30,8 +30,8 @@ function ProjectList() {
 
 
   return (
-    <Container className="my-5 my-md-8" ref={ref}>
-      <h2  className="mb-5">Persoonlijke projecten</h2>
+    <Container className="my-5 px-xl-5 my-md-8 z-index-1500" ref={ref}>
+      <h2  className="mb-5 lead-large">Persoonlijke projecten</h2>
       <Row xs={1} md={2} lg={2}>
         <Col md className="mb-4">
           <InView as="div">

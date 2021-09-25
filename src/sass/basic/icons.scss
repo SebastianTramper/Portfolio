@@ -21,7 +21,8 @@
 
 .home-icon{
     top: 1rem;
-    left: 1.3rem;
+    z-index: 1000;
+    mix-blend-mode: difference;
     @include media-breakpoint-up(md) {
         top: 10%;
         left: initial;

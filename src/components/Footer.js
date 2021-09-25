@@ -35,7 +35,8 @@ const Footer = () => {
                     <InView as="div">
                         <animated.div style={textAnimation}>
                             <Col xl={{ span: 6, offset: 3 }} className="p-5 shadow bg-white">
-                                <h3 className="mb-4">Stuur mij een bericht</h3>
+                                <h3>Uw intresse gewekt? </h3>
+                                <h2 className="mb-4">Stuur mij een bericht</h2>
                                 <ContactForm />
                             </Col>
                         </animated.div>

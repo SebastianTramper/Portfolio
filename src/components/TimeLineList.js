@@ -42,8 +42,8 @@ function TimelineList(props) {
       </div>
       <TimelineListItem category="School" subject="Stage junior webdeveloper"/>
       <TimelineListItem category="School" subject="Tweede jaar softwaredeveloper niveau 4"/>
-      <TimelineListItem category="Werk" subject="Bijbaan wordpress theme developer"/>
-      <TimelineListItem category="Project" subject="Onlinekookboek ontwikkeld"/>
+      <TimelineListItem category="Werk" subject="Bijbaan Wordpress theme developer"/>
+      <TimelineListItem category="Project" subject="Onlinekookboek.com ontwikkeld"/>
       <TimelineListItem category="Focus" subject="PHP, Databases"/>
 
 
