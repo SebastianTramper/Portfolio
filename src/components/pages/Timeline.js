@@ -17,7 +17,7 @@ class Timeline extends Component {
         <div className="bg-dark min-vh-100">
           <Container>
             <HomeIcon />
-            <div className="py-7 pt-md-10">
+            <div className="py-7 pt-md-10 px-xxl-8 ">
             <TimelineList/>
               </div>
           </Container>

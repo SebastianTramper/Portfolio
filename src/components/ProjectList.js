@@ -26,9 +26,6 @@ function ProjectList() {
 
     });
 
-
-
-
   return (
     <Container className="my-5 px-xl-5 my-md-8 z-index-1500" ref={ref}>
       <h2  className="mb-5 lead-large">Persoonlijke projecten</h2>
