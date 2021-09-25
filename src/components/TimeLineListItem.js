@@ -35,7 +35,7 @@ function TimelineListItem(props) {
             </div>
 
 
-              <div className="category-item ms-md-5 ms-lg-6 ml-xxl-10  text-center text-lg-left">
+              <div className="category-item ms-md-5 ms-lg-6 ms-xxl-11  text-center text-lg-left">
                   <span className="category-item-text ">
                       {props.subject}
                   </span>
