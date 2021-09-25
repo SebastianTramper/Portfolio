@@ -7,7 +7,7 @@ import { useInView, InView } from 'react-intersection-observer'
 
 import OnlinekookBook from '../images/projects/onlinekookboek.PNG';
 import TheetuindeMeeze from '../images/projects/theetuindemeeze.PNG';
-
+import chanelkaspteraanhuis from '../images/projects/chanelkapsteraanhuis.PNG'
 function ProjectList() {
 
   const { ref, inView } = useInView({
@@ -31,44 +31,47 @@ function ProjectList() {
 
   return (
     <Container className="my-5 my-md-8" ref={ref}>
-      <h2>Websites</h2>
-      <Row >
+      <h2  className="mb-5">Persoonlijke projecten</h2>
+      <Row xs={1} md={2} lg={2}>
         <Col md className="mb-4">
           <InView as="div">
             <animated.div style={showProject} className="card border-1 border-dark project">
-              <Card.Img src={OnlinekookBook} alt="project" className="img-fluid" />
+              <Card.Img src={OnlinekookBook} alt="project" className="img-fluid card-image" />
               <Card.ImgOverlay className="project-overlay">
-                <Card.Title className="text-white">Onlinekookbook</Card.Title>
-                <Card.Text>
-                  Deze website heb ik gemaakt in begin 2020 sindien hebben maandelijkse verbeteringen doorgevoerd.
-                  We zijn begonnen met een wordpress maar later zijn we overgegaan naar MODX.
-                </Card.Text>
-                <Card.Text className="text-primary">
-                  <Link to="/" className="stretched-link text-white btn btn-primary">
-                    Bekijk dit project
-                  </Link>
-                </Card.Text>
+              <a href="https://onlinekookboek.com" target="onlinekookboek" className="stretched-link text-white d-flex justify-content-center align-items-center h-100">
+                  <Card.Title className="text-white">Onlinekookbook.com</Card.Title>
+              </a>
               </Card.ImgOverlay>
             </animated.div>
           </InView>
         </Col>
 
         <Col md className="mb-4">
-          <Card className="bg-dark text-white">
-            <Card.Img src={TheetuindeMeeze} alt="Card image" />
-            {/* <Card.ImgOverlay>
-              <Card.Title>Card title</Card.Title>
-              <Card.Text>
-                This is a wider card with supporting text below as a natural lead-in to
-                additional content. This content is a little bit longer.
-              </Card.Text>
-              <Card.Text>Last updated 3 mins ago</Card.Text>
-            </Card.ImgOverlay> */}
-          </Card>
+          <InView as="div">
+            <animated.div style={showProject} className="card border-1 border-dark project">
+            <Card.Img src={TheetuindeMeeze} alt="Card image" className="h-100 img-fluid card-image"/>
+              <Card.ImgOverlay className="project-overlay">
+              <a href="https://theetuindemeeze.nl" target="chanelkapsteraanhuis" className="stretched-link text-white d-flex justify-content-center align-items-center h-100">
+                <Card.Title className="text-white">Theetuindemeeze.nl</Card.Title>
+                </a>
+              </Card.ImgOverlay>
+            </animated.div>
+          </InView>
         </Col>
-        <Col>
 
+        <Col md className="mb-4">
+          <InView as="div">
+            <animated.div style={showProject} className="card border-1 border-dark project">
+              <Card.Img src={chanelkaspteraanhuis} alt="project" className="img-fluid card-image" />
+              <Card.ImgOverlay className="project-overlay">
+              <a href="https://chanelkapsteraanhuis.nl" target="chanelkapsteraanhuis" className="stretched-link text-white d-flex justify-content-center align-items-center h-100">
+                <Card.Title className="text-white">Chanelkapsteraanhuis.nl</Card.Title>
+                </a>
+              </Card.ImgOverlay>
+            </animated.div>
+          </InView>
         </Col>
+
       </Row>
     </Container>
   );

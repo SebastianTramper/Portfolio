@@ -5,7 +5,8 @@ import ProjectList from '../ProjectList';
 import Footer from '../Footer';
 import { motion } from 'framer-motion';
 
-import { Element } from 'react-scroll'
+import { Element } from 'react-scroll';
+
 class Work extends Component {
 
   render() {

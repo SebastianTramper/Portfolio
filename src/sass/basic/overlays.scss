@@ -1,3 +1,7 @@
 .overlay-multiply {
     mix-blend-mode: multiply;
 }
+.card-image{
+    min-height: 260px;
+    object-fit: cover;
+}

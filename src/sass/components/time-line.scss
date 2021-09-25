@@ -1,0 +1,43 @@
+.year{
+    font-size: $year-font-size;
+    color: $year-color;
+    text-align: center;
+    font-weight: $year-font-weight;
+}
+
+.category{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: $cateogry-border-width solid $cateogry-border-color;
+    position: relative;
+
+    .category-text {
+        position: absolute;
+        font-weight: $category-font-weight;
+        left: 50%;
+        top: 50%;
+        color: $white;
+        font-size: $cateogry-font-size;
+        transform: translateX(-50%)translateY(-50%);
+    }
+}
+
+.category-item{
+    color: $category-item-color;
+    font-size: 1.5rem;
+
+    @include media-breakpoint-up(md) {
+        font-size: 2rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+        font-size: $category-item-font-size;
+    }
+
+    font-weight: $category-item-font-weight;
+}
+
+.category-chevron{
+    width: 40px;
+}

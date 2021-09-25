@@ -43,7 +43,7 @@ const Expertise = () => {
                                                 <span className="text-primary">Front-end</span> development
                                             </Card.Title>
                                             <Card.Text className="fw-light mb-4">
-                                                Ik bouw interactieve websites met oog voor UX / UI
+                                                Ik bouw interactieve websites <br></br> met oog voor UX / UI
                                             </Card.Text>
                                             <div className="mb-4">
                                                 <h6>
@@ -76,14 +76,14 @@ const Expertise = () => {
                                                 <span className="text-success">Back-end</span> development
                                             </Card.Title>
                                             <Card.Text className="fw-light mb-4">
-                                                Ik bouw maatwerk oplossingen naar de wensen de van klant.
+                                                Ik bouw maatwerk oplossingen <br></br>naar de wensen de van klant.
                                             </Card.Text>
                                             <div className="mb-4">
 
                                                 <h6>
                                                     Talen die ik spreek
                                                 </h6>
-                                                <p className="fw-light">PHP, Javascript, SQL</p>
+                                                <p className="fw-light">PHP, Javascript, SQL, Java</p>
                                             </div>
 
                                             <div className="mb-4">
@@ -91,7 +91,7 @@ const Expertise = () => {
                                                     Frameworks / libraries
                                                 </h6>
                                                 <p className="fw-light">
-                                                    CakePHP, Medoo, Node
+                                                    CakePHP, Medoo, Node, Spring Boot
                                                 </p>
                                             </div>
                                         </Card.Body>
@@ -106,19 +106,19 @@ const Expertise = () => {
                                         <Card.Img variant="top" src={tools} className="expertise-icon" />
                                         <Card.Body className="pt-0">
                                             <Card.Title>
-                                                <span className="text-blue">Dev tools </span>/ technieken
+                                                <span className="text-blue">Dev tools </span>/ overige
                                             </Card.Title>
 
                                             <div className="mb-4">
                                                 <ul className="p-0 list-unstyled fw-light">
                                                     <li>Terminal</li>
-                                                    <li>VS code</li>
                                                     <li>Git</li>
-                                                    <li>Github</li>
+                                                    <li>Rest API's</li>
                                                     <li>NPM</li>
                                                     <li>Gulp</li>
                                                     <li>Webpack</li>
                                                     <li>MODX</li>
+                                                    <li>Unit testen</li>
                                                     <li>Wordpress</li>
                                                 </ul>
                                             </div>
