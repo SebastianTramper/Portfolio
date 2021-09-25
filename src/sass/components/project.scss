@@ -19,3 +19,9 @@
         opacity: 1;
     }
 }
+
+.card-image{
+    min-height: 260px;
+    max-height: 500px;
+    object-fit: cover;
+}
