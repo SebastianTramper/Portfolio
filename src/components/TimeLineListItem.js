@@ -1,8 +1,10 @@
-import React from 'react';
-
+import React, {useState, useCallback} from 'react';
 import { useSpring, animated } from 'react-spring'
 import { useInView, InView } from 'react-intersection-observer'
 import Chevron from "../images/icons/chevron.svg";
+import {Collapse} from 'react-collapse';
+import { transform } from 'framer-motion';
+
 
 function TimelineListItem(props) {
 
@@ -21,15 +23,24 @@ function TimelineListItem(props) {
       config: { duration: 600 },
 
     });
+  
+    const [isButtonCollapseOpen, setIsButtonCollapseOpen] = useState(false);
+    const onClick = useCallback(
+      () => setIsButtonCollapseOpen(!isButtonCollapseOpen),
+      [isButtonCollapseOpen]
+    );
+
+  
   return (
 
     <InView as="div" className="h-100">
-      <animated.div style={showProject} className="h-100">
-      <div className="time-line-item d-lg-flex align-items-center w-100 flex-grow-1 justify-content-between px-md-8 mb-5 mb-md-6 " ref={ref}>
+      <animated.div style={showProject} className="h-100 px-lg-8">
+      <div className="time-line-item bg-dark border-0 d-lg-flex align-items-center w-100 flex-grow-1 justify-content-between px-0  mb-5 mb-md-6 " ref={ref} >
+
             <div className="d-flex align-items-center">
 
             <div className="category mx-auto mx-lg-0 mb-4 mb-lg-0">
-              <span className="category-text">
+              <span className="category-text" style={props.color}>
                     {props.category}
                 </span> 
             </div>
@@ -43,9 +54,11 @@ function TimelineListItem(props) {
             </div>
 
               <div className="d-none d-lg-block">
-                <img src={Chevron} alt="chevron" className="category-chevron ms-md-4 ms-lg-5"></img>
+                <img src={Chevron} alt="chevron" className="category-chevron ms-md-4 ms-lg-5" ></img>
               </div>
       </div>
+     
+
       </animated.div>
     </InView>
   );
