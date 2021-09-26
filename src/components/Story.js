@@ -8,8 +8,8 @@ const Story = () => {
 
 
     return (
-        <div className="py-5 py-md-6 position-relative bg-gray maxw1">
-                <Row >
+        <div className="py-5 py-md-6 position-relative bg-gray ">
+                <Row className="maxw1">
                     <Col md className="mb-5 mb-md-0 ml-0 ms-md-7 ml-xxl-0">
                         <div>
                                     <h2>Bio&#129488;</h2>
