@@ -37,7 +37,7 @@ function TimelineListItem(props) {
       <animated.div style={showProject} className="h-100 px-lg-8">
       <div className="time-line-item bg-dark border-0 d-lg-flex align-items-center w-100 flex-grow-1 justify-content-between px-0  mb-5 mb-md-6 " ref={ref} >
 
-            <div className="d-flex align-items-center">
+            <div className="d-lg-flex align-items-center">
 
             <div className="category mx-auto mx-lg-0 mb-4 mb-lg-0">
               <span className="category-text" style={props.color}>
