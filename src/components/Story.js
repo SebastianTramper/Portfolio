@@ -15,16 +15,16 @@ const Story = () => {
                                     <h2>Bio&#129488;</h2>
                                     <p>
                                     Bedankt voor het bekijken van mijn portfolio en projecten. <br></br> Mijn naam is Sebastian Tramper ik ben 25 jaar oud en ben woonachtig te Waarde in Zeeland. <br></br><br></br>
-Tijdens mijn vorige opleiding softwaredeveloper niveau 4 op het Grafisch lyceum heb ik veel geleerd op gebeid van programmeren. Binnen deze opleiding ging mijn interesse vooral uit naar web development met name de front-end.
+Tijdens mijn vorige opleiding softwaredeveloper niveau 4 op het Grafisch lyceum heb ik veel geleerd op het gebied van programmeren. Binnen deze opleiding ging mijn interesse vooral uit naar web development met name de front-end.
 Echter ben ik me ook gaan verdiepen in backend developement met talen zoals PHP en Java. <br></br><br></br>
-Tijdens deze studie ben ik werkzaam geweest als partime front-end developer bij een klein bedrijf in Yereseke. Het werk bij dit bedrijf heeft me veel kennis gebracht met name op het gebeid van HTML, CSS en Javascript.<br></br><br></br>
-Op dit moment ben ik aan het studeren aan de Hoogeschool Avans in Breda, waar ik een deeltijd opleiding volg in de richt Informatica.
+Tijdens deze studie ben ik werkzaam geweest als partime front-end developer bij een klein bedrijf in Yerseke. Het werk bij dit bedrijf heeft me veel kennis gebracht met name op het gebeid van HTML, CSS en Javascript.<br></br><br></br>
+Op dit moment ben ik aan het studeren aan de Hogeschool Avans te Breda, waar ik een deeltijd opleiding volg in de richting Informatica.
 
 
                                     </p>
 
                                     <p>
-                                        <strong>  Heeft u intresse in mijn werk?</strong>  <br></br> stuur dan gerust een mailtje naar <a href="mailto:tramper.s@outlook.com">tramper.s@outlook.com</a>
+                                        <strong>  Heeft u intresse in mijn werk?</strong>  <br></br> Stuur dan gerust een mailtje naar <a href="mailto:tramper.s@outlook.com">tramper.s@outlook.com</a>
                                     </p>
                                  
                         </div>
